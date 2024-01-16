@@ -9,7 +9,6 @@ function App() {
     //     <h1>SagarDaDa</h1>
     //   </header>
     // </div>
-
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
