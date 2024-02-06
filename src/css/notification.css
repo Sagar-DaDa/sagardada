@@ -1,0 +1,10 @@
+.notification-box{
+    position: fixed;
+    bottom: 0.5em;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 100;
+}
+.notification{
+    margin: 0;
+}

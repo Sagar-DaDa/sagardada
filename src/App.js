@@ -1,51 +1,123 @@
+import { useState } from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import hexColor from './resources/Colors.mjs';
+import css from './resources/Css.mjs'
+import backLightScheme from './resources/Backlight.mjs';
+import Notification from './components/Notification';
+import Strings from './resources/Strings';
+import About from './components/About';
+import Footer from './components/Footer';
+import Showcase from './components/Showcase';
 
 function App() {
+
+  const body = document.getElementById('body');
+
+  const [isDarkMode, setIsDarkMode] = useState(false); //Whether dark mode is enabled or not
+  const [backLightToggle, setBackLightToggle] = useState(false);
+  const [backLightColor, setBackLightColor] = useState(backLightScheme());
+  const [notification, setNotification] = useState({ type: null, message: null });
+
+  if (isDarkMode) {
+    body.style.backgroundColor = hexColor.dark;
+  }
+  else {
+    body.style.backgroundColor = hexColor.light;
+  }
+
+  const darkModeSwitcher = () => {
+    setIsDarkMode(prevIsDarkMode => !prevIsDarkMode);
+    setIsDarkMode(updatedIsDarkMode => {
+      if (updatedIsDarkMode) {
+        setNotification({
+          type: Strings.notificationType.toast,
+          message: Strings.english.darkModeEnabled
+        });
+      } else {
+        setNotification({
+          type: Strings.notificationType.toast,
+          message: Strings.english.darkModeDisabled
+        });
+      }
+
+      setTimeout(() => {
+        setNotification({ type: null, message: null });
+      }, 2000);
+
+      return updatedIsDarkMode;
+    });
+
+  }
+
+  const backLightToggler = () => {
+    setBackLightToggle(prevBackLightToggle => !prevBackLightToggle);
+    setBackLightColor(backLightScheme(100));
+
+    setBackLightToggle(updatedBackLightToggle => {
+      if (updatedBackLightToggle) {
+        setNotification({
+          type: Strings.notificationType.toast,
+          message: Strings.english.backLightEffectOn
+        });
+      } else {
+        setNotification({
+          type: Strings.notificationType.toast,
+          message: Strings.english.backLightEffectOff
+        });
+      }
+
+      setTimeout(() => {
+        setNotification({ type: null, message: null });
+      }, 2000);
+
+      return updatedBackLightToggle;
+    });
+
+  }
+  const backLightColorChanger = (schemeNo) => {
+    setBackLightColor(backLightScheme(schemeNo));
+  }
+
+
+
   return (
-    // <div className="App">
-    //   <div className='container'>WassUpppppppppppp</div>
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <h1>SagarDaDa</h1>
-    //   </header>
-    // </div>
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">SagarDaDa</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">Showcase</a>
-              </li>
-              {/* <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/">Action</a></li>
-                  <li><a className="dropdown-item" href="/">Another action</a></li>
-                  <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="/">Something else here</a></li>
-                </ul>
-              </li> */}
-              <li className="nav-item">
-                <a className="nav-link" href="/">About</a>
-              </li>
-            </ul>
-            <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+      <Notification notification={notification} />
+      <Navbar
+        title="SagarDaDa"
+        portfolio="Showcase"
+        about="About"
+        darkMode={isDarkMode}
+        backgroundColor={isDarkMode ? css.darkBackground : css.lightBackground}
+        darkModeSwitch={darkModeSwitcher}
+        backLightSwitch={isDarkMode ? css.displayInlineBlock : css.displayNone}
+        backLightToggle={backLightToggle}
+        backLightToggler={backLightToggler}
+        showColorPalette={isDarkMode ? backLightToggle ? css.displayInlineBlock : css.displayNone : css.displayNone}
+        backLightColor={isDarkMode ? backLightToggle ? backLightColor : backLightScheme(0) : backLightScheme()}
+        backLightColorChanger={backLightColorChanger} />
+
+      <div className='body-container px-2'>
+        <Home
+          backLightColor={isDarkMode ? backLightToggle ? backLightColor : backLightScheme(0) : backLightScheme()}
+        />
+        <About
+          isDarkMode={isDarkMode}
+          backLightToggle={backLightToggle}
+          backLightColor={isDarkMode ? backLightToggle ? backLightColor : backLightScheme(0) : backLightScheme()}
+        />
+        <Showcase
+          backLightColor={isDarkMode ? backLightToggle ? backLightColor : backLightScheme(0) : backLightScheme()}
+        />
+      </div>
+      <Footer
+        isDarkMode={isDarkMode}
+        backLightToggle={backLightToggle}
+        backLightColor={isDarkMode ? backLightToggle ? backLightColor : backLightScheme(0) : backLightScheme()}
+      />
+
     </>
   );
 }

@@ -1,0 +1,20 @@
+.language-div{
+  background-color: #6c757d28;
+}
+@media (max-width: 768px) {
+  .frontend-div{
+    border-right: none;
+    border-bottom: 1px solid #6c757d21;
+  }
+}
+@media (min-width: 768px) {
+  .frontend-div{
+    border-right: 1px solid #6c757d21;
+    border-bottom: none;
+  }
+}
+@media (min-width: 992px) {
+  #aboutContainer .intro-div {
+    width: 70%;
+  }
+}

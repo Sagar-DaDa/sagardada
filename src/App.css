@@ -1,38 +1,335 @@
-.App {
-  text-align: center;
+/* Custom for App.js */
+
+
+/* Background */
+.bg-transparent-grey{
+  background-color: #6c757d28;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Font family */
+.font-exo {
+  font-family: "Exo 2", sans-serif;
+}
+.font-signika {
+  font-family: "Signika", sans-serif;
+}
+.font-afacad {
+  font-family: "Afacad", sans-serif;
+}
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Font weight */
+.font-weight-300{
+  font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Font size */
+.font-size-13 {
+  font-size: 13px;
+}
+.font-size-15 {
+  font-size: 15px;
+}
+.font-size-18 {
+  font-size: 18px;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-50{
+  font-size: 50px;
+}
+
+/* Font colors */
+.font-dark {
+  color: #212529;
+}
+.font-light-grey {
+  color: #d9d9d9;
+}
+.font-muted-grey {
+  color: #6c757d;
+}
+.font-red {
+  color: rgb(255, 0, 0) !important;
+}
+.font-green {
+  color: #33ff00;
+}
+.font-lime {
+  color: #e6fb04;
+}
+.font-orange {
+  color: #ff6600;
+}
+.font-blue {
+  color: #0062ff;
+}
+.font-pink {
+  color: #ff0099;
+}
+.font-neon-pink {
+  color: #ff00aa;
+}
+.font-purple {
+  color: #cc00ff;
+}
+.font-neon-green {
+  color: #aaff00;
+}
+.font-sky-blue {
+  color: #6fa8dc;
+}
+
+/* Gap */
+.gap-10 {
+  gap: 10px;
+}
+.gap-5 {
+  gap: 5px;
+}
+
+/* Padding */
+.padding-5 {
+  padding: 5px;
+}
+.left-padding-50 {
+  padding-left: 50px;
+}
+.right-padding-50 {
+  padding-right: 50px;
+}
+
+/* Width */
+.width-200 {
+  width: 200px;
+}
+.width-{
+  width: 100px;
+}
+
+/* Height */
+.height-100 {
+  height: 100px;
+}
+.height-200 {
+  height: 200px;
+}
+.height-width-100vh {
+  height: 100vh;
+  width: 100vh;
+}
+.height-100vh {
+  height: 100vh;
+}
+
+/* Margin */
+.margin-left-1 {
+  margin-left: 1em;
+}
+.margin-right-1 {
+  margin-right: 1em;
+}
+
+/* Circles */
+.circle-50{
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Ul */
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Borders */
+.border-radius-5 {
+  border-radius: 5px;
+}
+.border-radius-10 {
+  border-radius: 10px;
+}
+.rounded-top-10{
+  border-radius: 10px 10px 0 0;
+}
+.border-red {
+  border: 1px solid red;
+}
+.border-green {
+  border: 1px solid green;
+}
+.border-black {
+  border: 1px solid black;
+}
+.border-blue {
+  border: 1px solid blue;
+}
+.border-white {
+  border: 1px solid white;
+}
+.border-muted-grey{
+  border: 1px solid #6c757d;
+}
+.border-transparent-grey{
+  border: 1px solid #6c757d21;
+}
+
+/* Text alignment */
+.text-alg-right {
+  text-align: right;
+}
+.justified-text {
+  text-align: justify;
+}
+
+/* Rotation */
+.rotate-45 {
+  transform: rotate(45deg);
+}
+.rotate-315 {
+  transform: rotate(360deg);
+}
+
+/* Back light effect */
+.back-light-on {
+  color: rgba(236, 62, 9, 0.637);
+  box-shadow: rgb(236, 62, 9) 0px 0px 100px -100px,
+    rgb(236, 62, 9) 0px 0px 50px 0px, #2125292d 0px -2px 6px 0px inset;
+}
+.back-light-off {
+  color: #6c757d;
+}
+
+/*Box shadows*/
+.box-shadow-default {
+  color: #d9d9d99a;
+  box-shadow: 0px 0px 10px #d9d9d9;
+}
+.box-shadow-1 {
+  color: #212529;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.box-shadow-2 {
+  /*Red shadow*/
+  box-shadow: rgb(236, 62, 9) 0px 0px 100px -100px,
+    rgb(236, 62, 9) 0px 0px 50px 0px, #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-red-sm {
+  color: rgba(255, 0, 0, 0.637);
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.637);
+}
+.box-shadow-green-sm {
+  color: #33ff009a;
+  box-shadow: 0px 0px 10px #33ff009a;
+}
+.box-shadow-lime-sm {
+  color: #e6fb049a;
+  box-shadow: 0px 0px 10px #e6fb049a;
+}
+.box-shadow-orange-sm {
+  color: #ff66009a;
+  box-shadow: 0px 0px 10px #ff66009a;
+}
+.box-shadow-blue-sm {
+  color: #0062ff9a;
+  box-shadow: 0px 0px 10px #0062ff9a;
+}
+.box-shadow-pink-sm {
+  color: #ff00999a;
+  box-shadow: 0px 0px 10px #ff00999a;
+}
+.box-shadow-pink-neon-sm {
+  color: #ff00aa9a;
+  box-shadow: 0px 0px 10px #ff00aa9a;
+}
+.box-shadow-purple-sm {
+  color: #cc00ff9a;
+  box-shadow: 0px 0px 10px #cc00ff9a;
+}
+.box-shadow-green-neon-sm {
+  color: #aaff009a;
+  box-shadow: 0px 0px 10px #aaff009a;
+}
+.box-shadow-sky-blue-sm {
+  color: #6fa8dc9a;
+  box-shadow: 0px 0px 10px #6fa8dc9a;
+}
+
+.box-shadow-red-md {
+  color: rgba(255, 0, 0, 0.637);
+  box-shadow: rgb(255, 0, 0) 0px 0px 100px -100px,
+    rgb(255, 0, 0) 0px 0px 50px 0px, #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-green-md {
+  color: #33ff009a;
+  box-shadow: #33ff00 0px 0px 100px -100px, #33ff00 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-lime-md {
+  color: #e6fb049a;
+  box-shadow: #e6fb04 0px 0px 100px -100px, #e6fb04 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-orange-md {
+  color: #ff66009a;
+  box-shadow: #ff6600 0px 0px 100px -100px, #ff6600 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-blue-md {
+  color: #0062ff9a;
+  box-shadow: #0062ff 0px 0px 100px -100px, #0062ff 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-pink-md {
+  color: #ff00999a;
+  box-shadow: #ff0099 0px 0px 100px -100px, #ff0099 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-pink-neon-md {
+  color: #ff00aa9a;
+  box-shadow: #ff00aa 0px 0px 100px -100px, #ff00aa 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-purple-md {
+  color: #cc00ff9a;
+  box-shadow: #cc00ff 0px 0px 100px -100px, #cc00ff 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-green-neon-md {
+  color: #aaff009a;
+  box-shadow: #aaff00 0px 0px 100px -100px, #aaff00 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+.box-shadow-sky-blue-md {
+  color: #6fa8dc9a;
+  box-shadow: #6fa8dc 0px 0px 100px -100px, #6fa8dc 0px 0px 50px 0px,
+    #2125292d 0px -2px 6px 0px inset;
+}
+
+/* Buttons */
+.btn-wide-1{
+  padding: 10px 50px;
+  border: none;
+  border-radius: 20px;
+  background-color: #6c757d5e;
+  margin: 0px !important;
+}
+.btn-wide-1:hover{
+  background-color: #6c757d;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Transition */
+body {
+  transition: all 1s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transition-1 {
+  transition: all 1s;
 }
