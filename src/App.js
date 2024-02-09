@@ -99,7 +99,7 @@ function App() {
         backLightColor={isDarkMode ? backLightToggle ? backLightColor : backLightScheme(0) : backLightScheme()}
         backLightColorChanger={backLightColorChanger} />
 
-      <div className='body-container px-2'>
+      <div className='px-2'>
         <Home
           backLightColor={isDarkMode ? backLightToggle ? backLightColor : backLightScheme(0) : backLightScheme()}
         />

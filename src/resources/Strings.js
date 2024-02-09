@@ -6,15 +6,24 @@ const Strings = {
         backLightEffectOn: 'Back light effect on.',
         backLightEffectOff: 'Back light effect off.',
         languagesIUse: 'Languages I use',
-        devTools: 'Dev Tools'
+        devTools: 'Dev Tools',
+        name: 'Name',
+        email: 'E-mail',
+        typeOfProject: 'Type of project',
+        budget: 'Budget',
+        message: 'Message',
+        additionalDetails: 'Additional details',
+        sendMessage: 'Send Message',
+        submit: 'Submit',
+
     },
     notificationType: {
         success: 'success',
         warning: 'warning',
         info: 'info',
         toast: 'toast'
-    
-    }
+    },
+
 }
 
 export default Strings;

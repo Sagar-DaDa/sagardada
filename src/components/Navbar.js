@@ -27,16 +27,12 @@ export default function Navbar(props) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 font-size-18">
+                        
                         <li className="nav-item">
-                            <a className="nav-link active"
-                                aria-current="page"
-                                href="/">{props.home}</a>
+                            <a className="nav-link" href="#about">{props.about}</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">{props.portfolio}</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">{props.about}</a>
+                            <a className="nav-link" href="#showcase">{props.portfolio}</a>
                         </li>
                     </ul>
                     <div className='d-flex justify-content-center'>

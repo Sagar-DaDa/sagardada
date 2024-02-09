@@ -1,6 +1,3 @@
-.language-div{
-  background-color: #6c757d28;
-}
 @media (max-width: 768px) {
   .frontend-div{
     border-right: none;
@@ -14,7 +11,7 @@
   }
 }
 @media (min-width: 992px) {
-  #aboutContainer .intro-div {
+  #about .intro-div {
     width: 70%;
   }
 }

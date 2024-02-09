@@ -1,0 +1,11 @@
+#showcase .slick-prev:before ,
+#showcase .slick-next:before  {
+  color: #6c757d;
+}
+.client-desc{
+  opacity: 0;
+}
+.client-desc:hover{
+  opacity: 90%;
+  transition: 0.3s ease-in-out;
+}
