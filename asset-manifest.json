@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sagardada/static/css/main.934db723.css",
-    "main.js": "/sagardada/static/js/main.6cc263df.js",
+    "main.js": "/sagardada/static/js/main.de957099.js",
     "static/js/787.8b3babdb.chunk.js": "/sagardada/static/js/787.8b3babdb.chunk.js",
     "static/media/slick.svg": "/sagardada/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/sagardada/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "index.html": "/sagardada/index.html",
     "static/media/slick.woff": "/sagardada/static/media/slick.295183786cd8a1389865.woff",
     "main.934db723.css.map": "/sagardada/static/css/main.934db723.css.map",
-    "main.6cc263df.js.map": "/sagardada/static/js/main.6cc263df.js.map",
+    "main.de957099.js.map": "/sagardada/static/js/main.de957099.js.map",
     "787.8b3babdb.chunk.js.map": "/sagardada/static/js/787.8b3babdb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.934db723.css",
-    "static/js/main.6cc263df.js"
+    "static/js/main.de957099.js"
   ]
 }
