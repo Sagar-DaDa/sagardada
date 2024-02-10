@@ -55,7 +55,7 @@ export default function HorizontalSlider(props) {
                         <div className="position-relative d-inline-block rounded">
                             <img
                                 className="slider-img rounded"
-                                src={client.img}
+                                src={process.env.PUBLIC_URL + client.img}
                                 alt=""
                                 style={{
                                     width: '100%',
