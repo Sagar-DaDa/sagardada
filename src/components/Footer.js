@@ -28,7 +28,8 @@ export default function Footer(props) {
 
     return (
         <>
-            <div className='px-2 mb-5'>
+            {/* Commented due to no backend support */}
+            {/* <div className='px-2 mb-5'>
                 <div className={'text-center container border-radius-10 font-size-18 ' + props.backLightColor.boxShadowSm}>
                     <div className='row p-4'>
                         <div className='col-12 col-md-4 p-2'>
@@ -45,7 +46,7 @@ export default function Footer(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {
                 showModal
                 &&

@@ -81,7 +81,8 @@ export default function About(props) {
                     </div>
                 </div>
             </div>
-            <div className='text-center'>
+            {/* Commented due to no backend support */}
+            {/* <div className='text-center'>
                 <button
                     className={`btn-wide-1 ${props.isDarkMode ? props.backLightToggle ? '' : ' border-muted-grey' : 'border-muted-grey'} ${props.backLightColor.boxShadowSm}`}
                     type='button'
@@ -96,7 +97,7 @@ export default function About(props) {
                 backLightColor={props.backLightColor} 
                 isDarkMode={props.isDarkMode} 
                 onCloseModal={() => setShowModal(false)} />
-            }
+            } */}
         </div>
 
     )
