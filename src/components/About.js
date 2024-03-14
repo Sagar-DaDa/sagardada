@@ -20,7 +20,7 @@ const backendDevTools = ['Spring Boot', 'Spring Tools', 'Maven', 'Github', 'Inte
 
 export default function About(props) {
     // const [showModal, setShowModal] = useState(false);
-
+    const showModal = false;
     if(showModal){
         document.body.style.overflow = 'hidden';
     }else{
