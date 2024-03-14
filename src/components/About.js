@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../css/about.css'
 import Strings from '../resources/Strings';
-import SayHelloModal from './SayHelloModal';
+// import SayHelloModal from './SayHelloModal';
 
 const aboutTextHead = "Hi, I’m Sagar. Nice to meet you.";
 const aboutTextDescOne = "Passionate about leveraging technology to drive innovation, I embark on my professional journey with a solid foundation in various IT domains. Throughout my academic endeavors, I have honed my skills in web development, programming, and problem-solving. My enthusiasm for staying abreast of the latest technological trends fuels my commitment to delivering solutions that meet the dynamic needs of the digital landscape. ";
@@ -19,7 +19,7 @@ const backendDevTools = ['Spring Boot', 'Spring Tools', 'Maven', 'Github', 'Inte
 
 
 export default function About(props) {
-    const [showModal, setShowModal] = useState(false);
+    // const [showModal, setShowModal] = useState(false);
 
     if(showModal){
         document.body.style.overflow = 'hidden';
