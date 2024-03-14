@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import '../css/footer.css'
 import ProjectDescModal from './ProjectDescModal'
 
-const startProjectLeftText = "Start a project";
-const startProjectCenterText = "Interested in working together? Let's schedule a time to have a conversation.";
-const startProjectRightText = "Let me know";
+// const startProjectLeftText = "Start a project";
+// const startProjectCenterText = "Interested in working together? Let's schedule a time to have a conversation.";
+// const startProjectRightText = "Let me know";
 const footerHead = "SagarDaDa";
 const footerDesc = "Navigating existence, acquiring wisdom, and immersing myself in the realm of coding.";
-const facebookLink = "https://www.facebook.com/SaagaarDaDa";
-const linkedinLink = "https://www.linkedin.com/in/saagaardada";
-const instagramLink = "https://https://www.instagram.com/saagaardada";
-const whatsappLink = "https://wa.me/+9779842333154";
+const facebookLink = "https://www.facebook.com/";
+const linkedinLink = "https://www.linkedin.com/";
+const instagramLink = "https://https://www.instagram.com/";
+const whatsappLink = "https://wa.me/+9779876543210";
 const emailLink = "saagaar.dada@gmail.com";
 const createdBy = "Created by me";
 const createdWith = "Created with";
